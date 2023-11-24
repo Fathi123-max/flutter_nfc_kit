@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_nfc_kit_example/widgets/button.dart';
 import 'package:flutter_nfc_kit_example/widgets/text_container.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
 class Bottom_Sheet extends GetResponsiveView {
@@ -32,7 +33,13 @@ class Bottom_Sheet extends GetResponsiveView {
                 ),
               ),
               Container(
-                color: Colors.amber,
+                // color: Colors.amber,
+                child: SvgPicture.asset(
+                  "assets/nfc.svg",
+                  colorFilter: ColorFilter.mode(Colors.blue, BlendMode.srcIn),
+
+                  // color: Colors.blue,
+                ),
                 height: 100,
                 width: 400,
               ),
